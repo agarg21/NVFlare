@@ -290,7 +290,7 @@ jobs:
 
   coverage:
     runs-on: ubuntu-24.04
-    needs: [full-ci-selection, unit-tests]
+    needs: [full-ci-selection]
     if: needs.full-ci-selection.outputs.run-full-ci == 'true'
     permissions:
       contents: read
